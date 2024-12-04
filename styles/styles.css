@@ -17,3 +17,7 @@ background-color: #7196a6;
     background-color: #5397d8;
 
 }
+#main{
+    position: absolute;
+    top: 40%;
+}
