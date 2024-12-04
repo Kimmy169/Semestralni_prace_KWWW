@@ -1,0 +1,19 @@
+body{
+background-color: #7196a6;
+}
+#logo_div{
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: auto;
+}
+#logo{
+    display: block;
+}
+#nav_div{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    background-color: #5397d8;
+
+}
