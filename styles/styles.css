@@ -1,25 +1,51 @@
+/*mobile*/
+@media screen and (orientation: portrait) and (min-width: 360px) and (min-height:800px) {
+body{
+    background-color: #7196a6;
+}
+}
+/*tablet*/
+@media screen and (orientation: landscape) and (min-width: 1024px) and (min-height:768px) {
+body{
+    background-color: #7196a6;
+}
+}
+/*desktop*/
+@media screen and (orientation: landscape) and (min-width: 1920px) and (min-height:1080px) {
+body{
+    background-color: #7196a6;
+}
+}
+
+
+
 body{
 background-color: #7196a6;
 }
 #logo_div{
-    position: absolute;
-    top: 0;
-    left: auto;
-    right: auto;
+    display: flex; /* Aktivuje flexbox */
+    justify-content: center; /* Horizontální centrování */
+    align-items: center; /* Vertikální centrování */
+    height: 110px; /* Nastavte výšku podle potřeby */
+    background-color: #5397d8; /* Volitelný styl pozadí */
 }
 #logo{
-    display: block;
+    max-width: 100%; /* Zabrání překročení šířky rodiče */
+    height: auto; /* Zachová poměr stran obrázku */
 }
 #nav_div{
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    background-color: #5397d8;
+    display: flex; /* Aktivuje flexbox */
+    justify-content: center; /* Horizontální centrování */
+    align-items: center; /* Vertikální centrování */
+    height: 30px; /* Nastavte výšku podle potřeby */
+    background-color: #6fa3dc; /* Volitelný styl pozadí */
 
 }
 #main{
-    position: absolute;
-    top: 40%;
+    display: flex; /* Aktivuje flexbox */
+    justify-content: center; /* Horizontální centrování */
+    align-items: center; /* Vertikální centrování */
+    background-color: #6fa3dc; /* Volitelný styl pozadí */
 }
 #main_categories_div
 {
@@ -27,6 +53,16 @@ background-color: #7196a6;
     top: 40%;
 }
 #shopping_list{
-    position: absolute;
-    top: 40%;
+    display: flex; /* Aktivuje flexbox */
+    justify-content: center; /* Horizontální centrování */
+    align-items: center; /* Vertikální centrování */
+    background-color: #f3ebbf; /* Volitelný styl pozadí */
+    max-width: 350px;
+}
+#main_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8cdcd5;
+    max-width: 500px;
 }
