@@ -45,7 +45,7 @@ background-color: #7196a6;
     display: flex; /* Aktivuje flexbox */
     justify-content: center; /* Horizontální centrování */
     align-items: center; /* Vertikální centrování */
-    background-color: #6fa3dc; /* Volitelný styl pozadí */
+    background-color: #7196a6; /* Volitelný styl pozadí */
 }
 #main_categories_div
 {
@@ -65,4 +65,14 @@ background-color: #7196a6;
     align-items: center;
     background-color: #8cdcd5;
     max-width: 500px;
+    justify-self: center;
+}
+.category{
+    width: 150px;
+    height: 150px;
+}
+#sweet{
+    background-image: url("../images/categories_pictures/cupcake.jpg");
+    background-repeat: no-repeat;
+    color: white;
 }
