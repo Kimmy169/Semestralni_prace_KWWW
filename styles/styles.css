@@ -17,62 +17,125 @@ body{
 }
 }
 
-
-
+/*---------------------------------------------------------------------------------------------------*/
 body{
-background-color: #7196a6;
+    background-color: #7196a6;
 }
 #logo_div{
-    display: flex; /* Aktivuje flexbox */
-    justify-content: center; /* Horizontální centrování */
-    align-items: center; /* Vertikální centrování */
-    height: 110px; /* Nastavte výšku podle potřeby */
-    background-color: #5397d8; /* Volitelný styl pozadí */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    background-color: #5397d8;
 }
 #logo{
-    max-width: 100%; /* Zabrání překročení šířky rodiče */
-    height: auto; /* Zachová poměr stran obrázku */
+    max-width: 100%;
+    height: auto;
+}
+/*Název aplikace*/
+#app_name{
+
 }
 #nav_div{
-    display: flex; /* Aktivuje flexbox */
-    justify-content: center; /* Horizontální centrování */
-    align-items: center; /* Vertikální centrování */
-    height: 30px; /* Nastavte výšku podle potřeby */
-    background-color: #6fa3dc; /* Volitelný styl pozadí */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background-color: #6fa3dc;
 
 }
 #main{
-    display: flex; /* Aktivuje flexbox */
-    justify-content: center; /* Horizontální centrování */
-    align-items: center; /* Vertikální centrování */
-    background-color: #7196a6; /* Volitelný styl pozadí */
-}
-#main_categories_div
-{
-    position: absolute;
-    top: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7196a6;
 }
 #shopping_list{
-    display: flex; /* Aktivuje flexbox */
-    justify-content: center; /* Horizontální centrování */
-    align-items: center; /* Vertikální centrování */
-    background-color: #f3ebbf; /* Volitelný styl pozadí */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3ebbf;
     max-width: 350px;
 }
-#main_div{
+/*Hlavní část stránky s přehledem kategorií*/
+#main_categories_div{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #8cdcd5;
-    max-width: 500px;
     justify-self: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-radius: 15px;
+    border: solid 3px #535ed8;
 }
+/*Tlačítka kategorií*/
 .category{
     width: 150px;
     height: 150px;
-}
-#sweet{
-    background-image: url("../images/categories_pictures/cupcake.jpg");
     background-repeat: no-repeat;
     color: white;
+    text-shadow: black 3px 3px 3px;
+    background-color: #5397d8;
+    font-weight: bolder;
+    font-size: large;
+    opacity: 80%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+    border: 3px solid #535ed8;
+}
+/*Pozadí za textem v tlačítkách*/
+.category span {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 4px;
+    border-radius: 7px;
+}
+/*Kategorie receptů*/
+#sweet{
+    background-image: url("../images/categories_pictures/cupcake.jpg");
+}
+#salty{
+    background-image: url("../images/categories_pictures/salt.jpg");
+}
+/*Kategorie potravin*/
+#pastries{
+    background-image: url("../images/categories_pictures/bread.jpg");
+}
+#fruit{
+    background-image: url("../images/categories_pictures/apple.jpg");
+}
+#vegetable{
+    background-image: url("../images/categories_pictures/carrot.jpg");
+}
+#dairy{
+    background-image: url("../images/categories_pictures/cheese.jpg");
+}
+#nonperishable{
+    background-image: url("../images/categories_pictures/can.jpg");
+}
+#sweets{
+    background-image: url("../images/categories_pictures/lolipop.jpg");
+}
+#saltys{
+    background-image: url("../images/categories_pictures/popcorn.jpg");
+}
+#spices{
+    background-image: url("../images/categories_pictures/spices.jpg");
+}
+#meat{
+    background-image: url("../images/categories_pictures/meat.jpg");
+}
+#drinks{
+    background-image: url("../images/categories_pictures/drink.jpg");
+}
+#other{
+    background-image: url("../images/categories_pictures/other.jpg");
+}
+#copyright{
+    text-align: center;
 }
