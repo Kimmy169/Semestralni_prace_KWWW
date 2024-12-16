@@ -5,45 +5,55 @@
     <title>Vytvoření receptu</title>
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="icon" href="../images/logo.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
     <div id="logo_div">
         <img id="logo" src="../images/logo_site.jpeg" width="100" height="100" alt="logo">
+        <label id="app_name">Smartkup</label>
     </div>
     <div id="nav_div">
-        <nav>
             <a href="categories_food.html"><button class="nav">Potraviny</button></a>
             <a href="categories_recipes.html"><button class="nav">Recepty</button></a>
             <a href="index.html"><button class="nav">Nákupní seznam</button></a>
-        </nav>
     </div>
 </header>
 <main>
     <div id="main_div">
     <form id="add_item_form">
-        <input id="recipe_photo" type="file" name="recipe_name" alt="Obrázek receptu">
-        <label for="name">Název receptu</label>
-        <input id="name" name="name" type="text">
-        <label for="category">Kategorie</label>
-        <select id="category" name="category">
-            <option value="salty">Slaný recept</option>
-            <option value="sweet">Sladký recept</option>
-        </select>
-        <label for="steps">Pracovní postup</label>
-        <input id="steps" name="steps" type="text">
-        <label for="time">Doba pečení</label>
-        <input id="time" name="time" type="number">
-        <label for="time">min/hodin</label>
-        <label for="temperature">Teplota pečení</label>
-        <input id="temperature" name="temperature" type="number">
-        <label for="temperature">°C</label>
-        <label for="save">Uložit</label>
-        <input id="save" name="save" type="submit">
+        <div class="form_div">
+            <label class="label" for="recipe_photo">Vyberte fotografii</label>
+            <input class="input" id="recipe_photo" type="file" name="recipe_name" alt="Obrázek receptu">
+            <label class="label" for="name">Název receptu</label>
+            <input  class="input"id="name" name="name" type="text">
+            <label class="label" for="category">Kategorie</label>
+            <select class="input" id="category" name="category">
+                <option value="salty">Slaný recept</option>
+                <option value="sweet">Sladký recept</option>
+            </select>
+        </div>
+        <div class="form_div">
+            <label  class="label" for="steps">Pracovní postup</label>
+            <input class="input" id="steps" name="steps" type="text">
+                <label class="label" for="time">Doba pečení</label>
+            <div class="inline_input">
+                <input class="input" id="time" name="time" type="number">
+                <label class="inline_label" for="time">min/hodin</label>
+            </div>
+                <label class="label" for="temperature">Teplota pečení</label>
+            <div class="inline_input">
+                <input class="input" id="temperature" name="temperature" type="number">
+                <label class="inline_label" for="temperature">°C</label>
+            </div>
+        </div>
+        <div class="submit_div">
+            <input class="submit_button" id="save" name="save" type="submit" value="Uložit">
+        </div>
     </form>
     </div>
 </main>
-<footer id="footer_div">
+<footer id="footer">
     <p id="copyright">&copy; 2024 Smartkup Všechna práva vyhrazena.</p>
 </footer>
 </body>
