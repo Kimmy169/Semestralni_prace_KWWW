@@ -13,18 +13,23 @@
     </div>
     <div id="nav_div">
         <nav>
-            <a href="categories_food.html"><button>Potraviny</button></a>
-            <a href="categories_recipes.html"><button>Recepty</button></a>
-            <a href="index.html"><button>Nákupní seznam</button></a>
+            <a href="categories_food.html"><button class="nav">Potraviny</button></a>
+            <a href="index.html"><button class="nav">Nákupní seznam</button></a>
         </nav>
     </div>
 </header>
-<main id="main_categories_div">
-    <button id="sweet" class="category" value="sweet"><span>Sladké recepty</span></button>
-    <button id="salty" class="category" value="salty"><span>Slané recepty</span></button>
-    <a href="add_recipe.html"><button>+</button></a>
-</main>
-<footer>
+<main>
+    <div id="main_div">
+        <div id="add_div">
+            <a href="add_recipe.html"><button class="add">+</button></a>
+        </div>
+        <div id="main_categories_div">
+            <button id="sweet" class="category" value="sweet"><span>Sladké recepty</span></button>
+            <button id="salty" class="category" value="salty"><span>Slané recepty</span></button>
+        </div>
+    </div>
+    </main>
+<footer id="footer_div">
     <p id="copyright">&copy; 2024 Smartkup Všechna práva vyhrazena.</p>
 </footer>
 </body>

@@ -7,31 +7,35 @@
     <link rel="icon" href="../images/logo.ico">
 </head>
 <body>
-<header><div id="logo_div">
+<header>
+    <div id="logo_div">
     <img id="logo" src="../images/logo_site.jpeg" width="100" height="100" alt="logo">
 </div>
     <div id="nav_div">
         <nav>
-            <a href="categories_food.html"><button>Potraviny</button></a>
-            <a href="categories_recipes.html"><button>Recepty</button></a>
-            <a href="index.html"><button>Nákupní seznam</button></a>
-
+            <a href="categories_recipes.html"><button class="nav">Recepty</button></a>
+            <a href="index.html"><button class="nav">Nákupní seznam</button></a>
         </nav>
-    </div></header>
+    </div>
+</header>
 <main>
-    <a href="add_item.html"><button>+</button></a>
-    <div id="main_categories_div">
-        <button id="pastries" class="category" value="pastries"><span>Pečivo</span></button>
-        <button id="fruit"  class="category" value="fruit"><span>Ovoce</span></button>
-        <button id="vegetable" class="category" value="vegetables"><span>Zelenina</span></button>
-        <button id="dairy" class="category" value="dairy"><span>Mléčné výrobky</span></button>
-        <button id="nonperishable" class="category" value="nonperishable"><span>Trvanlivé potraviny</span></button>
-        <button id="sweets" class="category" value="sweets"><span>Sladkosti</span></button>
-        <button id="saltys" class="category" value="saltys"><span>Slané pochoutky</span></button>
-        <button id="spices" class="category" value="spices"><span>Koření</span></button>
-        <button id="meat" class="category" value="meat"><span>Maso</span></button>
-        <button id="drinks" class="category" value="drinks"><span>Nápoje</span></button>
-        <button id="other" class="category" value="other"><span>Ostatní potraviny</span></button>
+    <div id="main_div">
+        <div id="add_div">
+            <a href="add_item.html"><button class="add">+</button></a>
+        </div>
+        <div id="main_categories_div">
+            <button id="pastries" class="category" value="pastries"><span>Pečivo</span></button>
+            <button id="fruit"  class="category" value="fruit"><span>Ovoce</span></button>
+            <button id="vegetable" class="category" value="vegetables"><span>Zelenina</span></button>
+            <button id="dairy" class="category" value="dairy"><span>Mléčné výrobky</span></button>
+            <button id="nonperishable" class="category" value="nonperishable"><span>Trvanlivé potraviny</span></button>
+            <button id="sweets" class="category" value="sweets"><span>Sladkosti</span></button>
+            <button id="saltys" class="category" value="saltys"><span>Slané pochoutky</span></button>
+            <button id="spices" class="category" value="spices"><span>Koření</span></button>
+            <button id="meat" class="category" value="meat"><span>Maso</span></button>
+            <button id="drinks" class="category" value="drinks"><span>Nápoje</span></button>
+            <button id="other" class="category" value="other"><span>Ostatní potraviny</span></button>
+        </div>
     </div>
 </main>
 <footer>
