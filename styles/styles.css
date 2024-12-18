@@ -1,253 +1,414 @@
 /*mobile*/
 @media screen and (orientation: portrait) and (min-width: 360px) and (min-height:800px) {
-body{
-    background-color: #7196a6;
-}
-}
-/*tablet*/
-@media screen and (orientation: landscape) and (min-width: 1024px) and (min-height:768px) {
-body{
-    background-color: #7196a6;
-}
-}
-/*desktop*/
-@media screen and (orientation: landscape) and (min-width: 1920px) and (min-height:1080px) {
-body{
-    background-color: #7196a6;
-}
-}
+    body, html {
+        background-color: #a6bcd6;
+    }
 
-/*---------------------------------------------------------------------------------------------------*/
-body,html{
-    background-color: #7196a6;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-#logo_div{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 110px;
-    background-color: #5397d8;
-}
-#logo{
-    max-width: 100%;
-    height: auto;
-    justify-self: flex-start;
-    margin-left: 10px;
-}
-/*Název aplikace*/
-#app_name{
-    display: flex;
-    padding: 10px;
-    align-items: center;
-    justify-self: center;
-    text-align: center;
-    color: white;
-    text-shadow: 3px 0 darkblue;
-    font-size: 50px;
-    font-weight: bold;
-    font-family: 'Orbitron', sans-serif;
-    text-decoration: darkblue underline dashed;
-}
-#nav_div{
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
-    background-color: #6fa3dc;
-}
-.nav{
-    width: 100px;
-    height: 50px;
-    color: white;
-    text-shadow: black 1px 1px 1px;
-    background-color: #5397d8;
-    display: flex;
-    font-weight: bold;
-    font-size: 15px;
-    opacity: 80%;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 10px;
-    border: 3px solid #535ed8;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
+    #logo_div {
+        height: 90px;
+    }
 
-#shopping_list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f3ebbf;
-    max-width: 350px;
+    #app_name {
+        font-size: 40px;
+    }
+
+    .nav {
+        width: 80px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .category {
+        width: 120px;
+        height: 120px;
+        font-size: medium;
+    }
+
+    .input {
+        font-size: 14px;
+    }
 }
-main{
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-#main_div{
-    display: flex;
-    background-color: #7196a6;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    height: 100%;
-}
-/*Hlavní část stránky s přehledem kategorií*/
-#main_categories_div{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: row;
-    background-color: #8cdcd5;
-    flex-wrap: wrap;
-    gap: 10px;
-    border-radius: 15px;
-    border: solid 3px #535ed8;
-}
-/*Tlačítka kategorií*/
-.category{
-    width: 150px;
-    height: 150px;
-    background-repeat: no-repeat;
-    color: white;
-    text-shadow: black 3px 3px 3px;
-    background-color: #5397d8;
-    font-weight: bolder;
-    font-size: large;
-    opacity: 80%;
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    position: relative;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 20px;
-    border: 3px solid #535ed8;
-}
-/*Pozadí za textem v tlačítkách*/
-.category span {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 4px;
-    border-radius: 7px;
-}
-#add_div{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    justify-self: flex-start;
-    background-color: #7196a6;
-    color: white;
-    padding: 10px;
-}
-.add{
-    width: 80px;
-    height: 40px;
-    background-color: #08448a;
-    color: white;
-    text-shadow: black 1px 1px 1px;
-    font-size: 16px;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center;
-    justify-self: center;
-    border-radius: 10px;
-}
-/*Kategorie receptů*/
-#sweet{
-    background-image: url("../images/categories_pictures/cupcake.jpg");
-}
-#salty{
-    background-image: url("../images/categories_pictures/salt.jpg");
-}
-/*Kategorie potravin*/
-#pastries{
-    background-image: url("../images/categories_pictures/bread.jpg");
-}
-#fruit{
-    background-image: url("../images/categories_pictures/apple.jpg");
-}
-#vegetable{
-    background-image: url("../images/categories_pictures/carrot.jpg");
-}
-#dairy{
-    background-image: url("../images/categories_pictures/cheese.jpg");
-}
-#nonperishable{
-    background-image: url("../images/categories_pictures/can.jpg");
-}
-#sweets{
-    background-image: url("../images/categories_pictures/lolipop.jpg");
-}
-#saltys{
-    background-image: url("../images/categories_pictures/popcorn.jpg");
-}
-#spices{
-    background-image: url("../images/categories_pictures/spices.jpg");
-}
-#meat{
-    background-image: url("../images/categories_pictures/meat.jpg");
-}
-#drinks{
-    background-image: url("../images/categories_pictures/drink.jpg");
-}
-#other{
-    background-image: url("../images/categories_pictures/other.jpg");
-}
-.form_div{
-    flex: 1;
-    min-width: 200px;
-}
-#add_item_form{
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-.input{
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 8px;
-    box-sizing: border-box;
-}
-.label{
-    display: block;
-    margin-bottom: 5px;
-}
-.inline_label{
-    white-space: nowrap; /* Zabrání zalomení textu */
-}
-.inline_input {
-    display: flex;
-    align-items: center; /* Zarovnání na střed vertikálně */
-    gap: 10px; /* Mezera mezi input a label */
-}
-.inline_input input {
-    flex: 1; /* Input se roztáhne, pokud je místo */
-}
-.submit_button{
-    margin-top: 20px;
-    padding: 10px 20px;
-}
-.submit_div{
+    /*tablet*/
+    @media screen and (orientation: landscape) and (min-width: 1024px) and (min-height: 768px) {
+        body, html {
+            background-color: #8ca6c6;
+        }
+
+        #logo_div {
+            height: 100px;
+        }
+
+        #app_name {
+            font-size: 45px;
+        }
+
+        .nav {
+            width: 90px;
+            height: 45px;
+            font-size: 14px;
+        }
+
+        .category {
+            width: 130px;
+            height: 130px;
+            font-size: large;
+        }
+
+        .input {
+            font-size: 16px;
+        }
+    }
+    /*desktop*/
+    @media screen and (orientation: landscape) and (min-width: 1920px) and (min-height: 1080px) {
+        body, html {
+            background-color: #7196a6;
+        }
+
+        #logo_div {
+            height: 120px;
+        }
+
+        #app_name {
+            font-size: 50px;
+        }
+
+        .nav {
+            width: 120px;
+            height: 60px;
+            font-size: 16px;
+        }
+
+        .category {
+            width: 150px;
+            height: 150px;
+            font-size: x-large;
+        }
+
+        .input {
+            font-size: 18px;
+        }
+    }
+
+    /*---------------------------------------------------------------------------------------------------*/
+    body, html {
+        background-color: #7196a6;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo_div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 110px;
+        background-color: #5397d8;
+    }
+
+    #logo {
+        max-width: 100%;
+        height: auto;
+        justify-self: flex-start;
+        margin-left: 10px;
+    }
+
+    /*Název aplikace*/
+    #app_name {
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        justify-self: center;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 0 darkblue;
+        font-size: 50px;
+        font-weight: bold;
+        font-family: 'Orbitron', sans-serif;
+        text-decoration: darkblue underline dashed;
+    }
+
+    #nav_div {
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+        background-color: #6fa3dc;
+    }
+
+    .nav {
+        width: 100px;
+        height: 50px;
+        color: white;
+        text-shadow: black 1px 1px 1px;
+        background-color: #5397d8;
+        display: flex;
+        font-weight: bold;
+        font-size: 15px;
+        opacity: 80%;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px;
+        border: 3px solid #535ed8;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav:hover {
+        background-color: #8971f8;
+        color: #6fa3dc;
+    }
+
+    #shopping_list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #f3ebbf;
+        max-width: 350px;
+        border-radius: 10px;
+        border: 5px solid #5397d8;
+        margin: 20px;
+        padding: 10px;
+        box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+        font-size: 21px;
+        font-family: 'Margarine', sans-serif;
+        font-weight: normal;
+    }
+
+    .list {
+        width: 20px;
+        height: 20px;
+        accent-color: #535ed8;
+        cursor: pointer;
+    }
+
+    .list_label {
+        position: relative;
+        padding-left: 30px;
+        cursor: pointer;
+    }
+
+    main {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    #main_div {
+        display: flex;
+        background-color: #7196a6;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+    }
+
+    /*Hlavní část stránky s přehledem kategorií*/
+    #main_categories_div {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: row;
+        background-color: #8cdcd5;
+        flex-wrap: wrap;
+        gap: 10px;
+        border-radius: 15px;
+        border: solid 3px #535ed8;
+    }
+
+    /*Tlačítka kategorií*/
+    .category {
+        width: 150px;
+        height: 150px;
+        background-repeat: no-repeat;
+        color: white;
+        text-shadow: black 3px 3px 3px;
+        background-color: #5397d8;
+        font-weight: bolder;
+        font-size: large;
+        opacity: 80%;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        position: relative;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 20px;
+        border: 3px solid #535ed8;
+    }
+
+    .category:hover {
+        box-shadow: 10px 10px 10px #535ed8;
+    }
+
+    /*Pozadí za textem v tlačítkách*/
+    .category span {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 4px;
+        border-radius: 7px;
+    }
+
+    #add_div {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-self: flex-start;
+        background-color: #7196a6;
+        color: white;
+        padding: 10px;
+    }
+
+    .add {
+        width: 80px;
+        height: 40px;
+        background-color: #08448a;
+        color: white;
+        text-shadow: black 1px 1px 1px;
+        font-size: 16px;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+        border-radius: 10px;
+    }
+
+    .add:hover {
+        box-shadow: 5px 5px 10px #535ed8;
+    }
+
+    /*Kategorie receptů*/
+    #sweet {
+        background-image: url("../images/categories_pictures/cupcake.jpg");
+    }
+
+    #salty {
+        background-image: url("../images/categories_pictures/salt.jpg");
+    }
+
+    /*Kategorie potravin*/
+    #pastries {
+        background-image: url("../images/categories_pictures/bread.jpg");
+    }
+
+    #fruit {
+        background-image: url("../images/categories_pictures/apple.jpg");
+    }
+
+    #vegetable {
+        background-image: url("../images/categories_pictures/carrot.jpg");
+    }
+
+    #dairy {
+        background-image: url("../images/categories_pictures/cheese.jpg");
+    }
+
+    #nonperishable {
+        background-image: url("../images/categories_pictures/can.jpg");
+    }
+
+    #sweets {
+        background-image: url("../images/categories_pictures/lolipop.jpg");
+    }
+
+    #saltys {
+        background-image: url("../images/categories_pictures/popcorn.jpg");
+    }
+
+    #spices {
+        background-image: url("../images/categories_pictures/spices.jpg");
+    }
+
+    #meat {
+        background-image: url("../images/categories_pictures/meat.jpg");
+    }
+
+    #drinks {
+        background-image: url("../images/categories_pictures/drink.jpg");
+    }
+
+    #other {
+        background-image: url("../images/categories_pictures/other.jpg");
+    }
+
+    .form_div {
+        flex: 1;
+        min-width: 200px;
+    }
+
+    #add_item_form {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 16px;
+        text-decoration: underline;
+    }
+
+    .input {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 8px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        border: solid 2px #535ed8;
+    }
+
+    .input:focus {
+        background-color: #8cdcd5;
+    }
+
+    .inline_label {
+        white-space: nowrap;
+    }
+
+    .inline_input {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .inline_input input {
+        flex: 1;
+    }
+
+    .submit_button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: solid 2px #535ed8;
+    }
+
+    .submit_button:hover {
+        background-color: #5397d8;
+        color: white;
+        cursor: pointer;
+    }
+
+    .submit_div {
         width: 100%;
         text-align: center;
-}
-#footer{
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    width: 100%;
-    height: 80px;
-}
-#copyright{
-    text-align: center;
-    padding: 10px;
-}
+    }
+
+    #footer {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        width: 100%;
+        height: 80px;
+    }
+
+    #copyright {
+        text-align: center;
+        padding: 10px;
+    }
