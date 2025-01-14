@@ -1,11 +1,25 @@
-body, html {
-    background-color: #7196a6;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    background-color: #7196a6;
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
+    flex:1;
+}
+header, main, footer {
+    width: 100%;
+}
+body {
+    border: 5px solid red;
+}
+
+html {
+    border: 5px solid green;
 }
 
 #logo_div {
@@ -103,6 +117,7 @@ main {
     display: flex;
     width: 100%;
     height: 100%;
+    flex:1;
 }
 
 #main_div {
@@ -126,6 +141,7 @@ main {
     gap: 10px;
     border-radius: 15px;
     border: solid 3px #535ed8;
+    width: 100%;
 }
 
 /*Tlačítka kategorií*/
@@ -243,16 +259,19 @@ main {
     background-image: url("../images/categories_pictures/other.jpg");
 }
 
-.form_div {
-    flex: 1;
-    min-width: 200px;
-}
-
 #add_item_form {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+}
+.form_div {
+    flex: 1;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
 }
 
 .label {
@@ -325,6 +344,7 @@ main {
 @media screen and (orientation: portrait) and (min-width: 360px){
     body, html {
         background-color: #5397d8;
+        margin: 0;
     }
 
     #logo_div {
