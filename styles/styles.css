@@ -9,17 +9,9 @@ body, html {
     width: 100%;
     display: flex;
     flex-direction: column;
-    flex:1;
 }
 header, main, footer {
     width: 100%;
-}
-body {
-    border: 5px solid red;
-}
-
-html {
-    border: 5px solid green;
 }
 
 #logo_div {
@@ -271,7 +263,6 @@ main {
     flex: 1;
     width: 100%;
     padding: 10px;
-    margin: 10px;
 }
 
 .label {
@@ -285,7 +276,7 @@ main {
 
 .input {
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding: 8px;
     box-sizing: border-box;
     border-radius: 8px;
@@ -311,7 +302,6 @@ main {
 }
 
 .submit_button {
-    margin-top: 20px;
     padding: 10px 20px;
     border-radius: 10px;
     border: solid 2px #535ed8;
@@ -334,6 +324,7 @@ main {
     justify-content: center;
     width: 100%;
     height: 80px;
+    margin: 0;
 }
 
 #copyright {
@@ -344,7 +335,6 @@ main {
 @media screen and (orientation: portrait) and (min-width: 360px){
     body, html {
         background-color: #5397d8;
-        margin: 0;
     }
 
     #logo_div {
@@ -364,9 +354,9 @@ main {
     }
 
     .nav {
-        width: 360px;
+        width: 150px;
         height: 100px;
-        font-size: 64px;
+        font-size: 32px;
     }
 
     .category {
@@ -410,20 +400,7 @@ main {
         width: 100%;
         height: 100%
     }
-    #footer {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        width: 100%;
-        height: 200px;
-        margin: 10px;
-    }
 
-    #copyright {
-        text-align: center;
-        padding: 5px;
-        font-size: 64px;
-    }
     #main_categories_div {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -496,15 +473,16 @@ main {
         box-shadow: 5px 5px 10px #535ed8;
     }
     .form_div {
-        flex: 1;
         width: 100%;
+        margin:5px;
+        padding: 5px;
     }
 
     #add_item_form {
         display: flex;
-        gap: 40px;
+        flex-direction: row;
         flex-wrap: wrap;
-        margin-top: 40px;
+        margin-top: 10px;
         width: 100%;
         height: 100%;
     }
@@ -514,17 +492,18 @@ main {
         margin-bottom: 5px;
         font-weight: bold;
         font-family: 'Orbitron', sans-serif;
-        font-size: 32px;
+        font-size: 52px;
         text-decoration: underline;
     }
 
     .input {
         width: 100%;
+        height: 60px;
         margin-bottom: 15px;
-        padding: 8px;
         box-sizing: border-box;
-        border-radius: 8px;
+        border-radius: 5px;
         border: solid 2px #535ed8;
+        font-size: 32px;
     }
 
     .input:focus {
@@ -538,7 +517,7 @@ main {
     .inline_input {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 5px;
     }
 
     .inline_input input {
@@ -553,6 +532,9 @@ main {
         width: 200px;
         height: 150px;
         font-size: 64px;
+        align-self: flex-end;
+        align-items: center;
+        justify-self: center;
     }
 
     .submit_button:hover {
@@ -563,7 +545,19 @@ main {
 
     .submit_div {
         width: 100%;
+        height: 100%;
+    }
+    #copyright {
         text-align: center;
+        padding: 5px;
+        font-size: 64px;
+    }
+
+    #footer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 200px;
     }
 }
 /*tablet*/
@@ -704,6 +698,5 @@ main {
         justify-content: center;
         width: 100%;
         height: 100%;
-        margin: 5px;
     }
 }
