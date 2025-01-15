@@ -512,6 +512,7 @@ main {
 
     .inline_label {
         white-space: nowrap;
+        font-size: 48px;
     }
 
     .inline_input {
@@ -571,31 +572,112 @@ main {
     }
 
     #app_name {
-        font-size: 45px;
+        font-size: 36px;
     }
 
     .nav {
         width: 90px;
-        height: 45px;
+        height: 60px;
         font-size: 14px;
+    }
+    #shopping_list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        max-width: 700px;
+        border-radius: 10px;
+        border: 5px solid #5397d8;
+        margin: 20px;
+        padding: 10px;
+        box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+        font-size: 16px;
+        font-family: 'Margarine', sans-serif;
+        font-weight: normal;
+    }
+
+    .list {
+        width: 20px;
+        height: 20px;
+        accent-color: #535ed8;
+        cursor: pointer;
+    }
+
+    .list_label {
+        position: relative;
+        padding-left: 30px;
+        cursor: pointer;
+        font-size: 32px;
     }
 
     .category {
-        width: 90px;
-        height: 90px;
+        width: 120px;
+        height: 120px;
         font-size: large;
     }
     #main_categories_div {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
         justify-content: center;
-        align-content: start;
+        align-content: flex-start;
         padding: 20px;
         background-color: #8cdcd5;
         border-radius: 15px;
         border: solid 3px #535ed8;
         width: 100%;
+    }
+    /*Kategorie receptů*/
+    #sweet {
+        background-image: url("../images/categories_pictures/cupcake (Custom).png");
+    }
+
+    #salty {
+        background-image: url("../images/categories_pictures/salt (Custom).png");
+    }
+
+    /*Kategorie potravin*/
+    #pastries {
+        background-image: url("../images/categories_pictures/bread (Custom).png");
+    }
+
+    #fruit {
+        background-image: url("../images/categories_pictures/apple (Custom).png");
+    }
+
+    #vegetable {
+        background-image: url("../images/categories_pictures/carrot (Custom).png");
+    }
+
+    #dairy {
+        background-image: url("../images/categories_pictures/cheese (Custom).png");
+    }
+
+    #nonperishable {
+        background-image: url("../images/categories_pictures/can (Custom).png");
+    }
+
+    #sweets {
+        background-image: url("../images/categories_pictures/lolipop (Custom).png");
+    }
+
+    #saltys {
+        background-image: url("../images/categories_pictures/popcorn (Custom).png");
+    }
+
+    #spices {
+        background-image: url("../images/categories_pictures/spices (Custom).png");
+    }
+
+    #meat {
+        background-image: url("../images/categories_pictures/meat (Custom).png");
+    }
+
+    #drinks {
+        background-image: url("../images/categories_pictures/drink (Custom).png");
+    }
+
+    #other {
+        background-image: url("../images/categories_pictures/other (Custom).png");
     }
     #main_div {
         display: flex;
